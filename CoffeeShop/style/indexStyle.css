@@ -3,12 +3,14 @@
 }
 body{
     margin: 0;
-    font-family: Verdana;
+    font-family: Verdana;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
 }
 /* For mobile phones: */
 [class*="col-"] {
@@ -30,9 +32,21 @@ body{
   .col-12 {width: 100%;}
 }
 header{
-    background-color: #E1CE7A;
-    color: #424B54;
+    background: rgba(0,0,0,0.9);
+    color: white;
     text-align: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-bottom: 30px;
+    height: 230px;
+}
+.LogoBean{
+    padding-top: 50px;
+    width:200px;
+    height:200px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
 }
 h1, h3{
     margin: 0;
@@ -41,9 +55,31 @@ h1, h3{
 h3{
     font-style: italic;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 footer{
-    background-color: #424B54;
+    margin-top: 20px;
+    float: clear;
+    background-color: black;
     text-align: center;
-    color: ghostwhite;
+    color: white;
     padding: 7px;
+}
+.AboutUs{
+    background: rgba(0,0,0,0.9);
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+.AboutUs h1{
+    color: white;
+    text-align: center;
+}
+.AboutUs p {
+    color: white;
+    font-size: 20px;
+    margin: 40px;
+    text-align: justify;
 }
