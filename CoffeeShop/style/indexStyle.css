@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
 }
+/*
+    TODO: TABLET VIEW
+*/
 body{
     margin: 0;
     font-family: Verdana;    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: white;
 }
 [class*="col-"] {
   float: left;
@@ -15,6 +16,13 @@ body{
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+
+}
+.whyUs{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: justify;
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -30,6 +38,17 @@ body{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+    img{
+        margin-left: 17%;
+    }
+    iframe{
+        margin-left: 10%;
+    }
+    .whyUs{
+        width: 50%;
+        line-height: 50px;
+        text-align: justify;
+    }
 }
 header{
     background: rgba(0,0,0,0.9);
@@ -52,7 +71,7 @@ h1, h3{
     margin: 0;
     padding: 4px;
 }
-h3{
+.LogoBean h3{
     font-style: italic;
 }
 .row::after {
@@ -68,18 +87,26 @@ footer{
     color: white;
     padding: 7px;
 }
-.AboutUs{
-    background: rgba(0,0,0,0.9);
+
+img{
     border-top-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    box-shadow: 2px 1px 3px;
 }
-.AboutUs h1{
-    color: white;
+.welcomeWords h2{
+    margin-top: -10px;
+}
+.welcomeWords h3{
+    margin-top: -20px;
+    color: dimgray;
+}
+.map h2{
     text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
 }
-.AboutUs p {
-    color: white;
-    font-size: 20px;
-    margin: 40px;
-    text-align: justify;
+
+.whyUs h2{
+    text-align: center;
 }
